@@ -1,0 +1,36 @@
+prices from https://platform.claude.com/docs/en/about-claude/models/overview.md
+checked 2026-09-12; tokens counted on claude-opus-5
+answer length: measured in Part 2, per language
+
+ONE SUPPORT REQUEST -- tokens, and cost in US cents
+------------------------------------------------------------------------
+                        EN          RU          KK
+input tokens           145         209         317
+output tokens          867        1099         957
+haiku-4.5           0.4480      0.5704      0.5102
+sonnet-5            0.8960      1.1408      1.0204
+opus-5              2.2400      2.8520      2.5510
+fable-5.1           4.4800      5.7040      5.1020
+
+AT 5,000 REQUESTS/DAY -- US dollars per year
+------------------------------------------------------------------------
+                        EN          RU          KK
+haiku-4.5            8,176      10,410       9,311
+sonnet-5            16,352      20,820      18,622
+opus-5              40,880      52,049      46,556
+fable-5.1           81,760     104,098      93,112
+
+TWO RATIOS THAT ARE NOT THE SAME NUMBER
+------------------------------------------------------------------------
+                        EN          RU          KK
+input only           1.00x       1.44x       2.19x
+total bill           1.00x       1.27x       1.14x
+
+The first row is a property of the tokenizer. The second is what you
+actually pay on opus-5, and it moves with the length of the answer.
+State which one you mean, every time, or the number is worthless.
+
+THE NUMBER TO REMEMBER
+------------------------------------------------------------------------
+RU instead of EN on opus-5, same work, same volume: $11,169/year more (1.27x).
+KK instead of EN on opus-5, same work, same volume: $5,676/year more (1.14x).

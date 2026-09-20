@@ -1,0 +1,7 @@
+counting tokens on claude-opus-5 (free, no model run)
+  sentence       en=26  ru=35  kk=48
+  complaint      en=92  ru=134  kk=198
+  system_prompt  en=58  ru=80  kk=124
+  request        en=145  ru=209  kk=317  (system + complaint, one call -- what Part 3 prices)
+
+wrote measurements.json

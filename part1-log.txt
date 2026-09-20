@@ -1,0 +1,40 @@
+PART 1 -- offline size measures. No API key, no cost, no network.
+
+SENTENCE
+------------------------------------------------------------------
+                         EN           RU           KK
+chars                    69           75           72
+bytes                    69          139          135
+words                    11           11            9
+bytes/EN              1.00x        2.01x        1.96x
+bytes/char             1.00         1.85         1.88
+
+COMPLAINT
+------------------------------------------------------------------
+                         EN           RU           KK
+chars                   300          315          344
+bytes                   300          576          640
+words                    54           45           42
+bytes/EN              1.00x        1.92x        2.13x
+bytes/char             1.00         1.83         1.86
+
+SYSTEM_PROMPT
+------------------------------------------------------------------
+                         EN           RU           KK
+chars                   175          181          206
+bytes                   175          331          380
+words                    34           27           28
+bytes/EN              1.00x        1.89x        2.17x
+bytes/char             1.00         1.83         1.84
+
+==================================================================
+WRITE THESE DOWN BEFORE PART 2
+==================================================================
+1. A Latin letter is 1 byte in UTF-8; Cyrillic is 2. Kazakh letters
+   outside the Russian alphabet (ә, ғ, қ, ң, ө, ұ, ү, һ, і) are also 2.
+   You can see that in the bytes/char row above.
+2. Predict, for the COMPLAINT item: how many TOKENS will the Russian
+   version cost, as a multiple of the English one?   RU / EN = ____
+3. Same question for Kazakh.                          KK / EN = ____
+4. On what did you base the prediction -- characters, bytes, or words?
+5. Which one, if any, would a tokenizer have any reason to follow?

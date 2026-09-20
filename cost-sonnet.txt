@@ -1,0 +1,36 @@
+prices from https://platform.claude.com/docs/en/about-claude/models/overview.md
+checked 2026-09-12; tokens counted on claude-sonnet-5
+answer length: measured in Part 2, per language
+
+ONE SUPPORT REQUEST -- tokens, and cost in US cents
+------------------------------------------------------------------------
+                        EN          RU          KK
+input tokens           145         209         317
+output tokens          431         998         772
+haiku-4.5           0.2300      0.5199      0.4177
+sonnet-5            0.4600      1.0398      0.8354
+opus-5              1.1500      2.5995      2.0885
+fable-5.1           2.3000      5.1990      4.1770
+
+AT 5,000 REQUESTS/DAY -- US dollars per year
+------------------------------------------------------------------------
+                        EN          RU          KK
+haiku-4.5            4,198       9,488       7,623
+sonnet-5             8,395      18,976      15,246
+opus-5              20,988      47,441      38,115
+fable-5.1           41,975      94,882      76,230
+
+TWO RATIOS THAT ARE NOT THE SAME NUMBER
+------------------------------------------------------------------------
+                        EN          RU          KK
+input only           1.00x       1.44x       2.19x
+total bill           1.00x       2.26x       1.82x
+
+The first row is a property of the tokenizer. The second is what you
+actually pay on sonnet-5, and it moves with the length of the answer.
+State which one you mean, every time, or the number is worthless.
+
+THE NUMBER TO REMEMBER
+------------------------------------------------------------------------
+RU instead of EN on sonnet-5, same work, same volume: $10,581/year more (2.26x).
+KK instead of EN on sonnet-5, same work, same volume: $6,851/year more (1.82x).

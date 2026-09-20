@@ -1,0 +1,88 @@
+counting tokens on claude-opus-5 (free, no model run)
+  sentence       en=26  ru=35  kk=48
+  complaint      en=92  ru=134  kk=198
+  system_prompt  en=58  ru=80  kk=124
+  request        en=145  ru=209  kk=317  (system + complaint, one call -- what Part 3 prices)
+
+answering the same complaint on claude-opus-5, in each language:
+
+[en]
+  stop_reason: end_turn
+  --- answer ---
+  Good afternoon, and thank you for getting in touch.
+  
+  **First, an important practical point:** no attachments have come through on my side. I can see your message, but not the contract or the statement. Until I have those documents in front of me, I can't tell you what rate was agreed, what the account terms say about changes, or whether the change in August was permitted — and I'm not going to guess at any of it.
+  
+  **What I'd need from you:**
+  
+  - The deposit agreement you signed in March, including any terms and conditions or tariff schedule attached to it
+  - The statement showing the rate change
+  - If you have it, any notice or correspondence you did receive around that time (or confirmation that you received none)
+  
+  You can reply to this message with the files attached, and I'll review them.
+  
+  **What happens once I have them:**
+  
+  I'll check the agreed rate and term against what the account has actually paid, and look at what the contract says about whether and how the rate could be varied, and what notice was required. If the change wasn't consistent with the terms you signed, that needs to be put right — including any interest you've lost.
+  
+  **On raising this formally:**
+  
+  You're entitled to have this handled as a formal complaint rather than a general enquiry, and I'd suggest doing so, since it concerns a change to agreed terms and the absence of notice. If you'd like, say so in your reply and I'll log it on that basis. A formal complaint gives you a written response and, if you're not satisfied with it, the option to escalate externally. I'd rather not quote you specific timescales or procedures from memory — I'll confirm those accurately once the complaint is opened.
+  
+  One thing worth doing in the meantime: keep the original contract and any envelopes or emails from around the time of the change, in case the question of what notice was sent becomes relevant.
+  
+  Please send the documents through and I'll take a look.
+  billed: 145 in, 867 out
+
+[ru]
+  stop_reason: end_turn
+  --- answer ---
+  Добрый день!
+  
+  К сожалению, я должен сразу пояснить: **во мне нет доступа к вашим документам** — вложения (договор и выписка) до меня не дошли, и никаких данных по вашему счёту у меня сейчас нет. Поэтому я не могу ни подтвердить, ни опровергнуть основание изменения ставки, назвать её размер, дату изменения или номер вашего счёта — любые такие сведения с моей стороны были бы догадкой, а этого я делать не буду.
+  
+  Что я могу сделать — объяснить, что понадобится для разбора обращения, чтобы вопрос решался по существу.
+  
+  **Пожалуйста, направьте повторно:**
+  1. Договор банковского вклада (депозита) полностью, включая приложения и тарифы, на которые он ссылается — там содержатся условия о сроке, ставке и порядке её изменения.
+  2. Выписку по счёту за период с момента открытия по текущую дату.
+  3. Номер счёта или договора и ФИО владельца — для идентификации.
+  4. Если ставка обсуждалась в отделении устно — укажите отделение и примерную дату визита.
+  
+  **На что стоит обратить внимание в самом договоре** (это поможет и вам, и специалисту, который будет разбирать обращение):
+  - есть ли прямое указание, что процентная ставка фиксирована на весь срок вклада;
+  - есть ли пункт о праве банка изменять ставку в одностороннем порядке и при каких условиях;
+  - предусмотрен ли порядок уведомления об изменении условий и каким способом (письмо, СМС, интернет-банк, публикация на сайте);
+  - не относится ли вклад к продуктам с плавающей или ступенчатой ставкой, зависящей, например, от суммы остатка, срока размещения или выполнения дополнительных условий;
+  - не произошло ли в августе события, изменяющего условия по договору (например, окончание промо-периода, снижение остатка ниже минимального, частичное снятие, пролонгация).
+  
+  **По вашему требованию восстановить первоначальные условия:** такое решение принимается уполномоченным подразделением банка на основании документов, и я не вправе его ни подтвердить, ни отклонить. Я рекомендую оформить письменную претензию с требованием: (а) указать конкретный пункт договора, на основании которого ставка была изменена, (б) предоставить подтверждение направления вам уведомления, (в) пересчитать проценты по первоначальной ставке, если изменение было неправомерным. К претензии приложите копию договора и выписку.
+  
+  Если пришлёте документы — я разберу их содержание и укажу, какие именно пункты регулируют вашу ситуацию.
+  billed: 209 in, 1099 out
+
+[kk]
+  stop_reason: end_turn
+  --- answer ---
+  Қайырлы күн! Өтінішіңіз үшін рақмет, жағдайды түсінемін — мөлшерлеменің күтпеген өзгеруі алаңдатарлық мәселе.
+  
+  **Өкінішке қарай, қазіргі уақытта менде сіз айтқан құжаттар жоқ.** Сіз тіркегеніңізді жазғанмен, маған депозит шарты да, шот бойынша үзінді көшірме де келіп түспеді. Сондай-ақ менде сіздің депозитіңіз, мөлшерлемеңіз немесе шотыңыз бойынша ешқандай дерек жоқ.
+  
+  Осы себепті мен нақты айта алмаймын:
+  - мөлшерлеме шартта қандай тәртіппен белгіленген (тіркелген немесе өзгермелі);
+  - тамыз айында ол қандай негізде өзгертілген;
+  - өзгеріс шарт талаптарына сай жүргізілген бе, жоқ па.
+  
+  Бұл мәліметтерді нақтамай, мөлшерлемені, күндерді немесе шот деректерін болжап айтуым дұрыс болмайды.
+  
+  **Сізден сұрайтыным:**
+  1. Депозит шартының толық сканерін (қолтаңбалар мен қосымшаларымен бірге) қайта жіберіңіз.
+  2. Мөлшерлеменің өзгергені көрінетін кезеңдегі шот бойынша үзінді көшірмені қоса беріңіз.
+  3. Бөлімшеде мөлшерлеме 12 айға бекітілген деп айтылғаны туралы кез келген жазбаша растауды (хат, хабарлама, чек, өтінім көшірмесі) — егер бар болса — қосыңыз.
+  
+  Құжаттар келіп түскен бойда мен шарттың мөлшерлеме туралы тармақтарын қарап, өзгерістің негізі болғанын нақтылап, келесі қадамдарды — оның ішінде бастапқы талаптарды қалпына келтіру туралы өтінішті ресми қарауға беру мүмкіндігін — түсіндіремін.
+  
+  Егер файлдарды осы арна арқылы жіберу сәтсіз болса, оларды қайта тіркеп көріңіз немесе банктің шағым қарау арнасына жолдағаныңыз жөн — сол жағдайда өтінішіңіз тіркеліп, белгіленген мерзімде жазбаша жауап беріледі.
+  billed: 317 in, 957 out
+
+wrote measurements.json
